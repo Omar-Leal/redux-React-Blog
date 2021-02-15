@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Platzi is made with Redux & React.js Both
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
