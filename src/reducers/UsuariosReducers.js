@@ -1,7 +1,7 @@
 import { TRAER_TODOS, CARGANDO, ERROR } from '../types/usuariosTypes'
 
 const INITIAL_STATE = {
-  usuarios: [],
+  usuarios: [1,2,3],
   loading: false,
   error: ''
 };

@@ -13,7 +13,7 @@ class Usuarios extends Component{
 
 
   printContent = () => {
-    if (this.props.cargando) {
+    if (this.props.loading) {
 			return <Loader />;
 		}
 
@@ -25,6 +25,7 @@ class Usuarios extends Component{
   }
 
   render() { 
+    console.log('esot?->',this.props.usuarios)
     return (
     <div>      
       {this.printContent()}
@@ -33,8 +34,10 @@ class Usuarios extends Component{
   )}
 
 }
+
+
 const mapStateToProps = (reducers) => {
-	return reducers.usuariosReducer;
-};
+  return reducers.UsuariosReducers;
+}
 
 export default connect(mapStateToProps, UsuariosActions)(Usuarios);

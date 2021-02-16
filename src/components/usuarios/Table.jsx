@@ -40,7 +40,7 @@ const Table = (props) => {
 }
 
 const mapStateToProps = (reducers) => {
-	return reducers.UsuariosReducer;
+	return reducers.UsuariosReducers;
 };
 
 export default connect(mapStateToProps)(Table);
