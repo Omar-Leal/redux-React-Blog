@@ -2,12 +2,11 @@ import axios from 'axios'
 
 export const traerTodos = () => async (dispatch) => {
   const API = 'https://jsonplaceholder.typicode.com/users'
-    const response = await axios.get(API)   
-      
-  dispatch({
-    type: 'traer_usuarios',
-    payload: response.data
-  })
+  const response = await axios.get(API)   
+    dispatch({
+      type: 'traer_usuarios',
+      payload: response.data
+    })
 }
 
 

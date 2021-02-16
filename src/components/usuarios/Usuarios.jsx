@@ -1,17 +1,14 @@
 import React, { Component } from 'react'
-
 import { connect } from 'react-redux'
-
 import * as UsuariosActios from '../../accions/UsuariosActions'
+
+
 
 class Usuarios extends Component{
   
   componentDidMount(){
     this.props.traerTodos();
   } 
-
-
-
  ponerFilas = () => (
    this.props.usuarios.map((users)=> (
       <tr key={users.id}>
@@ -21,8 +18,6 @@ class Usuarios extends Component{
       </tr>
    ))
  )
-  
-
 
   render() {
        console.log(this.props) 
