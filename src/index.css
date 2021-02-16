@@ -34,3 +34,12 @@ html {
   text-decoration: none;
   padding-right: 1.5rem;
 }
+
+.center {
+  text-align: center;
+}
+
+.red {
+  color: #91091e;
+  font-size: 3rem;
+}
